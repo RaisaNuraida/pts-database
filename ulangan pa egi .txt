@@ -1,0 +1,24 @@
+ulangan pa egi 
+1.SELECT employee.*, jobs.*
+FROM employee JOIN jobs
+ON employee.id_job = jobs.id_job
+WHERE jobs.name_job !=''; 
+
+2. SELECT employee.*, jobs.*
+FROM employee left JOIN jobs 
+ON employee.id_job = jobs.id_job
+WHERE employee.id_job is NULL;
+
+3. SELECT employee.*, jobs.*
+FROM employee right JOIN jobs 
+ON employee.id_job = jobs.id_job
+WHERE employee.id_job is NULL;
+
+4. SELECT employee.*, jobs.*
+FROM employee left JOIN jobs 
+ON employee.id_job = jobs.id_job
+WHERE employee.gender = 'M' ORDER BY employee.date_birth ASC;
+
+5. 
+
+6. 
